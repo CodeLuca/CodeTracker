@@ -1,0 +1,56 @@
+<style type="text/css">
+input {
+	float: center;
+	width: 50%;
+}
+</style>
+
+<br>
+  <div class="header">
+		<h1 style="display: inline">{{user}} - </h1>
+		<h1 style="display: inline"><div id="score"> Score: {{score}}</div></h1>
+	</div>
+
+	<center>
+	<div class="content">
+
+			<h2 class="content-subhead" style="color: #444444">Skills:</h2>
+			{{#each skills}}
+			<div class="section">
+					<b>Skill:</b> {{skill}}
+					<b>Level:</b> {{level}}
+			</div>
+			{{/each}}
+
+		<br>
+		
+		<form action="/addSkill" method="POST" class="pure-form" style="width: 80%">
+			<input type="text" name="skill" placeholder="Skill Name" style="margin-bottom: 8px;">
+			<input type="number" name="level" placeholder="Confidence 1-10" min="1" max="10" style="margin-bottom: 8px;">
+			<input type="submit" value="Add Skill" class="pure-button pure-button-primary">
+		</form>
+		<br>
+			<hr>
+
+		<h2 class="content-subhead" style="color: #444444">Projects:</h2>
+		{{#each projects}}
+		<div class="section">
+			<b>Name:</b> {{name}}<br>
+			<b>Date:</b> {{date}}<br>
+			<b>Link:</b> {{link}}
+		</div>
+		<br>
+		{{/each}}
+
+		<form action="/addProject" method="POST" class="pure-form" style="width: 80%">
+			<input type="text" name="name" placeholder="Project Name" style="margin-bottom: 8px;"><br>
+			<input type="text" name="info" placeholder="Information" min="1" max="10" style="margin-bottom: 8px;">
+			<input type="text" name="status" placeholder="Status (in progress?)" min="1" max="10" style="margin-bottom: 8px;">
+			<input type="text" name="url" placeholder="URL" min="1" max="10" style="margin-bottom: 8px;">
+			<div style="padding-bottom: 5px;">Start Date:</div>
+			<input type="date" name="startDate" placeholder="Start Date" min="1" max="10" style="margin-bottom: 8px;">
+			<div style="padding-bottom: 5px;">End Date:</div>
+			<input type="date" name="endDate" placeholder="Start Date" min="1" max="10" style="margin-bottom: 8px;">
+			<input type="submit" value="Add Skill" class="pure-button pure-button-primary">
+		</form>
+	</div>

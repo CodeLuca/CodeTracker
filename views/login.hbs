@@ -1,0 +1,35 @@
+<div class="content">
+<center>
+  <h1 class="content-subhead" style="color: #333333; padding-bottom: 4px; font-size: 40px">Why CodeTracker?</h1>
+  <p style="text-align: left">CodeTracker is a new, unique site that helps young coders find new people to work with and communicate with other coders. There are lots of young coders who work on their own, here there are dozens of coders that you can interact with by: 
+  <li style="text-align: left">Viewing their skills and projects.
+  <li style="text-align: left">Upvoting people's projects.
+  <li style="text-align: left">Commenting on their work and work together with others.
+  </p>
+
+  <div class="header">
+    <h2 style="display: inline; color: #000">Login</h2>
+    <br>
+  </div>
+  <center>
+{{err}}
+</center>
+<br>
+<center>
+<form action="/login" method="POST" class="pure-form">
+<input type="text" name="username" placeholder="Username">
+<input type="password" name="password" placeholder="Password">
+<input type="submit" class="pure-button pure-button-primary">
+</form>
+
+  <div class="header">
+    <h2 style="display: inline; color: #000">Register</h2>
+    <br>
+  </div>
+  <br>
+  <form action="/register" method="POST" class="pure-form">
+  <input type="text" name="username" placeholder="Username">
+  <input type="password" name="password" placeholder="Password">
+  <input type="submit" class="pure-button pure-button-primary">
+  </form>
+</center>

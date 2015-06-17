@@ -1,0 +1,36 @@
+<br>
+  <div class="header">
+		<h1 style="display: inline">{{user}} - </h1>
+		<h1 style="display: inline"><div id="score"> Score: {{score}}</div></h1>
+	</div>
+
+	<center>
+	<div class="content">
+			<h2 class="content-subhead" style="color: #444444">Skills:</h2>
+			{{#each skills}}
+			<div class="section">
+				<!-- <p> -->
+					<b>Skill:</b> {{skill}}
+					<b>Level:</b> {{level}}
+				<!-- </p> -->
+			</div>
+			{{/each}}
+
+		<h2 class="content-subhead" style="color: #444444">Projects:</h2>
+		{{#each projects}}
+		<div class="section">
+			<b>Name:</b> {{name}}<br>
+			<b>Info:</b> {{info}}<br>
+			<b>Status:</b> {{status}}<br>
+			<b>Url:</b> <a href="{{url}}">Click Me</a><br>
+			<b>Start Date:</b> {{startDate}}<br>
+			<b>End Date:</b> {{endDate}}<br>
+			<b>Votes:</b> {{votes}}
+			<center>
+			<a href="/vote/up/{{../user}}/{{@index}}/{{../voter}}"><i class="fa fa-arrow-up" style="color: #008000"></i></a>
+			    <i class="fa fa-arrow-down" style="color: #800000"></i>
+			</center>
+		</div>
+		<br>
+		{{/each}}
+	</div>

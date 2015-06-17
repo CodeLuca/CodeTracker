@@ -1,0 +1,33 @@
+<div class="content">
+<center>
+  <div class="header">
+    <h1 style="display: inline">Explore</h1>
+  </div>
+    <h2 class="content-subhead" style="color: #333333">How to Explore:</h2>
+    <p >Currently you can browse by users, and their overall score. Their score is affected by the amount of 'appreciations' overall of their projects. Many more ways of searching will soon be implemented including: searching different projects with keywords.
+    </p>
+
+    <br>
+
+    <table class="pure-table pure-table-horizontal">
+    <thead>
+        <tr>
+            <th>User</th>
+            <th># of Skills</th>
+            <th># of Projects</th>
+            <th>Score</th>
+        </tr>
+    </thead>
+
+    <tbody>
+      {{#each users}}
+        <tr>
+            <td><a href="/view/{{username}}">{{username}}</a></td>
+            <td>{{skills.length}}</td>
+            <td>{{projects.length}}</td>
+            <td>{{score}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+</table>
+</center>

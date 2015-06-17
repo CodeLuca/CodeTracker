@@ -1,0 +1,68 @@
+<html>
+<head>
+  <link rel="stylesheet" href="/font-awesome-4.3.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/layouts/pure.css">
+  <link rel="stylesheet" type="text/css" href="/sidebar.css">
+	<style>
+  a {
+    color: #1576D0;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #0D4981;
+    text-decoration: none;
+  }
+  .back {
+    width: 100%;
+    padding-top: 150px;
+    padding: 5px;
+    background-color: #ABABAB
+  }
+  .header {
+    padding-bottom: 10px;
+  }
+  @media screen and (min-width: 700px) {
+    .section {
+      width: 40%;
+    }
+  }
+  @media screen and (max-width: 200px) {
+    .section {
+      width: 40%;
+    }
+  }
+  .section {
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #E6E6E6
+  }
+  #skillsTitle {
+    color: #294AB6
+  }
+  #score {
+    display: inline; color: #118CB6
+  }
+	center {
+		font-family: arial;
+	}
+	</style>
+	<title>CodeTracker</title>
+</head>
+<body>
+  <div id="layout">
+      <div id="menu">
+      <div class="pure-menu">
+          <a class="pure-menu-heading" href="#" style="font-size: 16px">CodeTracker</a>
+
+          <ul class="pure-menu-list">
+              <a href="/home" class="pure-menu-link"><i class="fa fa-home"></i> Home</a>
+              <a href="/admin" class="pure-menu-link"><i class="fa fa-tachometer"></i> Dashboard</a>
+              <a href="/search" class="pure-menu-link"><i class="fa fa-search"></i> Explore</a>
+              <a href="/logout" class="pure-menu-link"><i class="fa fa-sign-out"></i></i> Logout</a>
+          </ul>
+      </div>
+  </div>
+    {{{body}}}
+</body>
+</html>
