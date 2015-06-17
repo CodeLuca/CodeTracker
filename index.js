@@ -27,6 +27,6 @@ require('./js/admin.js')(app, db);
 require('./js/login.js')(app, db);
 require('./js/home.js')(app, db);
 
-var port = 3000;
+var port = 80;
 app.listen(port);
 console.log('Listening on Port: ' + port)

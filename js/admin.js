@@ -121,6 +121,9 @@ module.exports = function(app, db) {
               }, {
                 $set: {
                   'projects': projectsObj
+                },
+                $inc: {
+                  'score': 1
                 }
               });
             }
